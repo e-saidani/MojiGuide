@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@media only screen and (max-width : 800px){
+    #entry{
+    width: 150px;
+    height: 150px;
+    gap: 2px;
+    }
+    #entry h1{
+        font-size: 20px;
+    }
+    #entry h2{
+        font-size: 15px;
+    }
+    #entry p{
+        font-size: 7px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+#entry{
+    width: 150px;
+    height: 150px;
+    gap: 2px;
+}
+#entry h1{
+    font-size: 10px;
+}
+#entry h2{
+    font-size: 7px;
+}
+#entry p{
+    font-size: 5px;
+}
+ #contact h1{
+        font-size: 20px;
+        
+    }
+    #contact p{
+        font-size: 15px;
+    }
+
+}
+@media only screen and (max-width: 349px){
+    #footer svg{
+        width: 45px;
+        margin-bottom: 0;
+    }
+    #footer p{
+        margin-top: 2px;
+    }
+    #footer div{
+        gap:5px;
+    }
+    #footer{
+        gap: 2px;
+    }
+}
+@media only screen and (max-width: 318px) {
+    #result{
+        width: 250px;
+    }
+    #result h1{
+        font-size: 52px;
+    }
+    #result h2{
+        font-size: medium;
+    }
+    #result h3{
+        font-size: x-small;
+    }
+}
+@media only screen and (max-width: 311px) {
+    #nav h2{
+        font-size: smaller;
+        margin-left: 4px;
+    }
+    
+    #search form{
+        padding: 0;
+    }
+    #search button{
+        font-size: 20px;
+        padding: 0;
+    }
+    #contact input , textarea{
+        margin-left: 10px;
+        font-size: small;
+    }
+    #contact button{
+        margin-left: 10px;
+        font-size: smaller;
+    }
+    #contact form{
+        padding-left: 0;
+    }
+    #contact h1{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    #contact p{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the value as needed for desired float effect */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#element {
+  animation: float 2s ease-in-out infinite; /* Adjust duration and timing function as needed */
+}
